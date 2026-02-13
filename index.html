@@ -1,0 +1,2247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Fortune Mantra Academy - Professional Stock Market Trading Training in Patna, Bihar</title>
+    <meta name="description" content="Learn stock market trading with discipline at Fortune Mantra Academy. Expert training in intraday trading, swing trading, risk management & trading psychology. Located in Patna, Bihar. Call: 7091674769">
+    <meta name="keywords" content="stock market training, trading academy, intraday trading course, swing trading, Patna Bihar, trading psychology, money management, fortune mantra academy">
+    <meta name="author" content="Fortune Mantra Academy">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.fortunemantraacademy.in/">
+    <meta property="og:title" content="Fortune Mantra Academy - Learn Trading with Discipline">
+    <meta property="og:description" content="Professional stock market trading training in Patna, Bihar. Master trading with expert guidance.">
+    <meta property="og:image" content="https://www.fortunemantraacademy.in/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.fortunemantraacademy.in/">
+    <meta property="twitter:title" content="Fortune Mantra Academy - Learn Trading with Discipline">
+    <meta property="twitter:description" content="Professional stock market trading training in Patna, Bihar.">
+    <meta property="twitter:image" content="https://www.fortunemantraacademy.in/images/twitter-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23f59e0b'/><path d='M30 60 L40 50 L50 55 L60 40 L70 45 L80 30' stroke='%230f172a' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/><path d='M70 30 L80 30 L80 40' stroke='%230f172a' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23f59e0b'/><path d='M30 60 L40 50 L50 55 L60 40 L70 45 L80 30' stroke='%230f172a' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/><path d='M70 30 L80 30 L80 40' stroke='%230f172a' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to bottom right, #0f172a, #1e293b, #0f172a);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(217, 119, 6, 0.2);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            background: rgba(15, 23, 42, 0.98);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 20px; /* Increased gap between logo and text */
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-section:hover {
+            transform: scale(1.05);
+        }
+
+        .logo-circle {
+            width: 60px; /* Slightly larger */
+            height: 60px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
+            position: relative;
+            overflow: hidden;
+            padding: 4px;
+        }
+
+        .logo-circle::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transform: rotate(45deg);
+            animation: shine 3s infinite;
+        }
+
+        @keyframes shine {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+
+        .logo-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            position: relative;
+            z-index: 2;
+            border-radius: 50%;
+        }
+
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            stroke: #0f172a;
+            stroke-width: 2.5;
+            position: relative;
+            z-index: 2;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .logo-text h1 {
+            font-size: 1.5rem;
+            font-weight: 900;
+            background: linear-gradient(to right, #fbbf24, #f59e0b, #d97706);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.025em;
+        }
+
+        .logo-text p {
+            font-size: 0.75rem;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #e2e8f0;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(to right, #f59e0b, #fbbf24);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: #f59e0b;
+        }
+
+        .enroll-btn {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: #0f172a;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .enroll-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .enroll-btn:hover::before {
+            left: 100%;
+        }
+
+        .enroll-btn:hover {
+            box-shadow: 0 10px 30px rgba(245, 158, 11, 0.5);
+            transform: scale(1.05);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .mobile-menu-btn span {
+            width: 24px;
+            height: 2px;
+            background: #f59e0b;
+            transition: all 0.3s;
+        }
+
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: rotate(45deg) translate(8px, 8px);
+        }
+
+        .mobile-menu-btn.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(8px, -8px);
+        }
+
+        .mobile-menu {
+            display: none;
+            background: #1e293b;
+            border-top: 1px solid rgba(217, 119, 6, 0.2);
+            padding: 1rem 1.5rem;
+        }
+
+        .mobile-menu.active {
+            display: block;
+            animation: slideDown 0.3s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .mobile-menu a {
+            display: block;
+            color: #e2e8f0;
+            text-decoration: none;
+            padding: 12px 0;
+            transition: color 0.3s;
+            border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+        }
+
+        .mobile-menu a:hover {
+            color: #f59e0b;
+            padding-left: 10px;
+        }
+
+        .mobile-menu .enroll-btn {
+            display: block;
+            text-align: center;
+            margin-top: 12px;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            padding: 160px 1.5rem 80px;
+            overflow: hidden;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            opacity: 0.1;
+        }
+
+        .hero-blob-1 {
+            position: absolute;
+            top: 80px;
+            left: 40px;
+            width: 288px;
+            height: 288px;
+            background: #f59e0b;
+            border-radius: 50%;
+            filter: blur(80px);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .hero-blob-2 {
+            position: absolute;
+            bottom: 80px;
+            right: 40px;
+            width: 384px;
+            height: 384px;
+            background: #2563eb;
+            border-radius: 50%;
+            filter: blur(80px);
+            animation: float 8s ease-in-out infinite;
+            animation-delay: 1s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) scale(1); }
+            50% { transform: translateY(-20px) scale(1.05); }
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 10;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(245, 158, 11, 0.1);
+            color: #fbbf24;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            margin-bottom: 2rem;
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% {
+                box-shadow: 0 0 5px rgba(245, 158, 11, 0.3);
+            }
+            50% {
+                box-shadow: 0 0 20px rgba(245, 158, 11, 0.6);
+            }
+        }
+
+        .hero h2 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b, #d97706);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient-shift 3s ease infinite;
+            background-size: 200% 200%;
+        }
+
+        @keyframes gradient-shift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .hero h3 {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 2rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #cbd5e1;
+            line-height: 1.75;
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: #0f172a;
+            padding: 16px 32px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1.125rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .btn-primary:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 20px 40px rgba(245, 158, 11, 0.5);
+            transform: translateY(-3px);
+        }
+
+        .btn-secondary {
+            border: 2px solid #f59e0b;
+            color: #fbbf24;
+            padding: 16px 32px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1.125rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s;
+        }
+
+        .btn-secondary:hover {
+            background: #f59e0b;
+            color: #0f172a;
+            transform: translateY(-3px);
+        }
+
+        .stats {
+            display: flex;
+            gap: 1.5rem;
+            padding-top: 1rem;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 1.875rem;
+            font-weight: 700;
+            color: #f59e0b;
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: #94a3b8;
+        }
+
+        .stat-divider {
+            height: 48px;
+            width: 1px;
+            background: rgba(245, 158, 11, 0.3);
+        }
+
+        /* Logo Display Box - Replacing Chart */
+        .logo-display-box {
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(8px);
+            padding: 3rem;
+            border-radius: 24px;
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            box-shadow: 0 20px 40px rgba(245, 158, 11, 0.2);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 400px;
+        }
+
+        .logo-display-box::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 24px;
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(217, 119, 6, 0.1));
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .logo-display-box:hover::before {
+            opacity: 1;
+        }
+
+        .main-logo-container {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+        }
+
+        .main-logo {
+            width: 350px;
+            height: 350px;
+            object-fit: contain;
+            animation: logoFloat 3s ease-in-out infinite;
+            filter: drop-shadow(0 10px 30px rgba(245, 158, 11, 0.3));
+        }
+
+        @keyframes logoFloat {
+            0%, 100% {
+                transform: translateY(0px) scale(1);
+            }
+            50% {
+                transform: translateY(-15px) scale(1.02);
+            }
+        }
+
+        .logo-glow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(245, 158, 11, 0.2), transparent);
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.5;
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.1);
+                opacity: 0.8;
+            }
+        }
+
+        /* Market Ticker */
+        .ticker {
+            background: linear-gradient(to right, #f59e0b, #d97706, #f59e0b);
+            padding: 1rem 0;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .ticker::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        .ticker-content {
+            display: flex;
+            white-space: nowrap;
+            animation: scroll 30s linear infinite;
+            position: relative;
+            z-index: 10;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .ticker-item {
+            display: inline-flex;
+            align-items: center;
+            margin: 0 2rem;
+        }
+
+        .ticker-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 12px;
+            stroke: #0f172a;
+        }
+
+        .ticker-text {
+            color: #0f172a;
+            font-weight: 600;
+            font-size: 1.125rem;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 80px 1.5rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.25rem;
+            color: #94a3b8;
+            max-width: 768px;
+            margin: 0 auto;
+        }
+
+        /* Courses Grid */
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .course-card {
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(8px);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid rgba(245, 158, 11, 0.2);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+        }
+
+        .course-card:hover {
+            border-color: rgba(245, 158, 11, 0.5);
+            box-shadow: 0 20px 40px rgba(245, 158, 11, 0.2);
+            transform: translateY(-12px) scale(1.02);
+        }
+
+        .course-header {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .course-icon {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            padding: 1rem;
+            border-radius: 12px;
+            color: #0f172a;
+            box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .course-card:hover .course-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .course-icon svg {
+            width: 32px;
+            height: 32px;
+        }
+
+        .course-info h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #fbbf24;
+            margin-bottom: 0.25rem;
+        }
+
+        .course-info .subtitle {
+            font-size: 0.875rem;
+            color: rgba(245, 158, 11, 0.7);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .course-description {
+            color: #cbd5e1;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .course-link {
+            display: inline-flex;
+            align-items: center;
+            color: #fbbf24;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .course-card:hover .course-link {
+            transform: translateX(8px);
+        }
+
+        
+        
+
+        /* Who Can Join */
+        .join-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .join-card {
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(8px);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid rgba(245, 158, 11, 0.2);
+            text-align: center;
+            transition: all 0.4s;
+        }
+
+        .join-card:hover {
+            border-color: rgba(245, 158, 11, 0.5);
+            box-shadow: 0 10px 30px rgba(245, 158, 11, 0.2);
+            transform: translateY(-8px) scale(1.05);
+        }
+
+        .join-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            transition: transform 0.3s;
+            display: inline-block;
+        }
+
+        .join-card:hover .join-icon {
+            transform: scale(1.2) rotate(10deg);
+        }
+
+        .join-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #fbbf24;
+            margin-bottom: 0.5rem;
+        }
+
+        .join-description {
+            color: #94a3b8;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            padding: 3rem;
+            border-radius: 24px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            animation: shine-cta 3s infinite;
+        }
+
+        @keyframes shine-cta {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .cta-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .cta-text {
+            font-size: 1.25rem;
+            color: #1e293b;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .cta-features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            position: relative;
+        }
+
+        .cta-feature {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            padding: 12px 24px;
+            border-radius: 8px;
+            color: #0f172a;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s;
+        }
+
+        .cta-feature:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+        }
+        /* Reviews Section - AUTO SCROLLING */
+        .reviews-section {
+            padding: 100px 1.5rem;
+            background: rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .reviews-container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .reviews-scroll-wrapper {
+            overflow: hidden;
+            margin-top: 3rem;
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .reviews-scroll-wrapper::before,
+        .reviews-scroll-wrapper::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 150px;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .reviews-scroll-wrapper::before {
+            left: 0;
+            background: linear-gradient(to right, rgba(15, 23, 42, 1), transparent);
+        }
+
+        .reviews-scroll-wrapper::after {
+            right: 0;
+            background: linear-gradient(to left, rgba(15, 23, 42, 1), transparent);
+        }
+
+        .reviews-track {
+            display: flex;
+            gap: 2rem;
+            animation: scrollReviews 40s linear infinite;
+            width: fit-content;
+        }
+
+        .reviews-track:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes scrollReviews {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .review-card {
+            min-width: 400px;
+            max-width: 400px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(245, 158, 11, 0.2);
+            border-radius: 20px;
+            padding: 2rem;
+            transition: all 0.3s;
+            flex-shrink: 0;
+        }
+
+        .review-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(245, 158, 11, 0.4);
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .review-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .review-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .review-info h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 0.25rem;
+        }
+
+        .review-role {
+            font-size: 0.875rem;
+            color: #94a3b8;
+        }
+
+        .review-stars {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 1rem;
+        }
+
+        .review-stars svg {
+            width: 20px;
+            height: 20px;
+            fill: #fbbf24;
+        }
+
+        .review-text {
+            color: #cbd5e1;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .contact-info {
+            margin-bottom: 2rem;
+        }
+
+        .contact-title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-description {
+            font-size: 1.25rem;
+            color: #cbd5e1;
+            margin-bottom: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .contact-item:hover {
+            transform: translateX(10px);
+        }
+
+        .contact-icon {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            padding: 1rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .contact-item:hover .contact-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .contact-icon svg {
+            width: 24px;
+            height: 24px;
+            stroke: #0f172a;
+        }
+
+        .contact-details-label {
+            font-size: 0.875rem;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .contact-details-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #fbbf24;
+        }
+
+        .contact-form {
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(8px);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-title {
+            font-size: 1.875rem;
+            font-weight: 700;
+            color: #fbbf24;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-input, .form-select {
+            width: 100%;
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            border-radius: 8px;
+            padding: 14px 16px;
+            color: white;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        .form-input::placeholder {
+            color: #64748b;
+        }
+
+        .form-input:focus, .form-select:focus {
+            outline: none;
+            border-color: #f59e0b;
+            box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.1);
+        }
+
+        .form-select option {
+            background: #0f172a;
+        }
+
+        .form-submit {
+            width: 100%;
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: #0f172a;
+            padding: 16px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1.125rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .form-submit::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .form-submit:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .form-submit:hover {
+            box-shadow: 0 10px 30px rgba(245, 158, 11, 0.5);
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        footer {
+            background: #0f172a;
+            padding: 3rem 1.5rem;
+            border-top: 1px solid rgba(245, 158, 11, 0.2);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 1rem;
+        }
+
+        .footer-logo-circle {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+        }
+
+        .footer-logo-circle svg {
+            width: 28px;
+            height: 28px;
+            stroke: #0f172a;
+        }
+
+        .footer-logo-text h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #fbbf24;
+        }
+
+        .footer-logo-text p {
+            font-size: 0.75rem;
+            color: #94a3b8;
+            text-transform: uppercase;
+        }
+
+        .footer-description {
+            color: #94a3b8;
+            line-height: 1.6;
+        }
+
+        .footer-title {
+            color: #fbbf24;
+            font-weight: 700;
+            font-size: 1.125rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #fbbf24;
+            padding-left: 5px;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            align-items: center;
+            color: #94a3b8;
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-contact-item svg {
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
+            stroke: #fbbf24;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(245, 158, 11, 0.2);
+            padding-top: 2rem;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            color: #94a3b8;
+        }
+
+        .footer-highlight {
+            color: #fbbf24;
+            font-weight: 600;
+        }
+
+        /* Scroll to top button */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+            z-index: 999;
+            box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
+        }
+
+        .scroll-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(245, 158, 11, 0.6);
+        }
+
+        .scroll-to-top svg {
+            width: 24px;
+            height: 24px;
+            stroke: #0f172a;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links, .enroll-btn {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            .hero h2 {
+                font-size: 2.5rem;
+            }
+
+            .hero h3 {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .stats {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .stat-divider {
+                display: none;
+            }
+
+            .contact-title {
+                font-size: 2rem;
+            }
+
+            .cta-title {
+                font-size: 1.75rem;
+            }
+
+            .hero {
+                min-height: auto;
+            }
+
+            .main-logo {
+                width: 250px;
+                height: 250px;
+            }
+
+            .logo-section {
+                gap: 12px;
+            }
+
+            .logo-text h1 {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .hero-grid, .contact-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo-section" onclick="window.location.href='#home'">
+                <div class="logo-circle">
+                    <!-- Replace 'logofortune.png' with your actual logo file path -->
+                    <img src="logofortune.png" alt="Fortune Mantra Logo" class="logo-image">
+                    <!-- Fallback SVG if image not found -->
+                    <svg class="logo-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="display: none;">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <h1>FORTUNE MANTRA</h1>
+                    <p>Academy</p>
+                </div>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+               
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#home" onclick="closeMobileMenu()">Home</a>
+            <a href="#courses" onclick="closeMobileMenu()">Courses</a>
+            
+            <a href="#about" onclick="closeMobileMenu()">About</a>
+            <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+            <a href="tel:7091674769" class="enroll-btn">Enroll Now</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-blob-1"></div>
+            <div class="hero-blob-2"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                    <span class="badge">🎯 NEW BATCH STARTING SOON</span>
+
+                    <h2>Learn <span class="gradient-text">Trading</span> with</h2>
+                    <h3 class="gradient-text">Discipline, Not Gambling</h3>
+
+                    <p>Master the art of trading with professional guidance. From beginner to advanced, we provide comprehensive training in stock market, intraday trading, and wealth creation.</p>
+
+                    <div class="hero-buttons">
+                        <a href="tel:7091674769" class="btn-primary">
+                            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            Call Now: 7091674769
+                        </a>
+                        <a href="#courses" class="btn-secondary">
+                            Explore Courses
+                            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Students Trained</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">Success Rate</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Logo Display - Replacing Chart -->
+                <div class="chart-container" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="logo-display-box">
+                        <div class="logo-glow"></div>
+                        <div class="main-logo-container">
+                            <!-- Replace 'logofortune.png' with your actual logo file path -->
+                            <img src="logofortune.png" alt="Fortune Mantra Academy Logo" class="main-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Ticker -->
+    <div class="ticker">
+        <div class="ticker-content" id="tickerContent"></div>
+    </div>
+
+    <!-- Courses Section -->
+    <section id="courses">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our <span class="gradient-text">Training Programs</span></h2>
+                <p class="section-subtitle">Comprehensive curriculum designed to transform you from a beginner to a professional trader</p>
+            </div>
+
+            <div class="courses-grid">
+                <div class="course-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                            </svg>
+                        </div>
+                        <div class="course-info">
+                            <h3>1 Month Trading Crash Course</h3>
+                            
+                        </div>
+                    </div>
+                    <p class="course-description">Master the fundamentals and advanced strategies of stock market trading</p>
+                    <p class="subtitle">✔ Market Basics</p>
+                             <p class="subtitle">✔ Quick Strategies</p>
+                              <p class="subtitle">✔ Live Examples</p>
+                               <p class="subtitle">Duration: 1 Month</p>
+                                <p class="subtitle">Beginner to Advanced</p>
+                    <div class="course-link">
+                         <h3>5700</h3>
+                        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="course-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                            </svg>
+                        </div>
+                        <div class="course-info">
+                            <h3>Elite Mentorship – Lifetime AccessPrice</h3>
+                           
+                        </div>
+                    </div>
+                    <p class="course-description">Learn day trading and swing trading strategies from industry experts</p>
+                    <p class="subtitle">✔ Professional Techniques</p>
+                             <p class="subtitle">✔ All Course Access</p>
+                              <p class="subtitle">✔Personal Guidance</p>
+                               <p class="subtitle">✔ Strategy Upgrades</p>
+                                
+                               <p class="subtitle">♾ Lifetime Access</p>
+                               <p class="subtitle">💻 Mode: Online + Offline</p>
+                               <p class="subtitle">🎁 ₹2,000 Trader Fund Bonus</p>
+                    <div class="course-link">
+                        <h3>9,999</h3>
+                        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                </div>
+                 <div class="course-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                            </svg>
+                        </div>
+                        <div class="course-info">
+                            <h3>Advanced Professional Trader Program (Level 3)</h3>
+                           
+                        </div>
+                    </div>
+                    <p class="course-description">Serious traders ke liye PRO level training 🚀</p>
+                    <p class="subtitle">Professional Techniques</p>
+                             <p class="subtitle">✔ Advanced Price Action</p>
+                              <p class="subtitle">✔ Intraday + Swing Strategies</p>
+                               <p class="subtitle">✔ Market Psychology</p>
+                                <p class="subtitle">✔Live Trading Practice</p>
+                                <p class="subtitle">📅 Duration: 4 Months</p>
+                                <p class="subtitle">💻 Mode: Online / Offline</p>
+                                <p class="subtitle">🎁 Trader Fund Bonus Included</p>
+                                
+                    <div class="course-link">
+                        <h3>8,999</h3>
+                        
+                        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                </div>    
+
+                <div class="course-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <div class="course-info">
+                            <h3>Intermediate Trading Course (Level 2)</h3>
+                            
+                        </div>
+                    </div>
+                    <p class="course-description">Basics aate hain? Ab market ko read karna seekhiye 📊</p>
+                    <p class="subtitle">✔ Technical Analysis</p>
+                            <p class="subtitle">✔ Fundamental Analysis</p>
+                            <p class="subtitle">✔ Chart Patterns</p>
+                            <p class="subtitle">✔ Indicators Strategy</p>
+                            <p class="subtitle">📅 Duration: 3 Months</p>
+                            <p class="subtitle">💻 Mode: Online / Offline</p>
+                            <p class="subtitle">🎁 Trader Fund Bonus Included</p>
+                    <div class="course-link">
+                        <h3>7,999</h3>
+                      
+                        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="course-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                            </svg>
+                        </div>
+                        <div class="course-info">
+                            <h3>Beginner Trading Course (Level 1)</h3>
+                        </div>
+                    </div>
+                    <p class="course-description">Stock Market ka zero se start karna hai?
+Yeh course beginners ke liye perfect hai 👇</p>
+                    <p class="subtitle">✔Stock Market Basics</p>
+                             <p class="subtitle">✔ Trading vs Investing</p>
+                              <p class="subtitle">✔ Risk Management Introduction</p>
+                               <p class="subtitle">✔ Live Market Understanding</p>
+                                <p class="subtitle">📅 Duration: 2 Month</p>
+                                <p class="subtitle">💻 Mode: Online / Offline</p>
+                                    <p class="subtitle">🎁 ₹2,000 Trader Fund Support</p>
+
+                    <div class="course-link">
+                        <h3>3,750</h3>
+                        
+                        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: linear-gradient(135deg, #1e293b, #334155); padding: 2rem; border-radius: 16px; border: 1px solid rgba(245, 158, 11, 0.3); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);" data-aos="fade-up" data-aos-delay="500">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                    <div>
+                        <h3 style="font-size: 1.5rem; font-weight: 700; color: #fbbf24; margin-bottom: 0.5rem;">Practical Market Training</h3>
+                        <p style="color: #cbd5e1;">Real-time market analysis and hands-on trading experience</p>
+                    </div>
+                    <div style="background: #f59e0b; color: #0f172a; padding: 12px 24px; border-radius: 8px; font-weight: 700; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);">
+                        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                        </svg>
+                        Certificate Provided
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Who Can Join -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title"><span class="gradient-text">Who Can Join?</span></h2>
+                <p class="section-subtitle">Perfect for anyone looking to build wealth through trading</p>
+            </div>
+
+            <div class="join-grid">
+                <div class="join-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="join-icon">🎓</div>
+                    <h3 class="join-title">Students</h3>
+                    <p class="join-description">Build wealth knowledge early</p>
+                </div>
+
+                <div class="join-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="join-icon">💼</div>
+                    <h3 class="join-title">Job Holders</h3>
+                    <p class="join-description">Create additional income streams</p>
+                </div>
+
+                <div class="join-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="join-icon">🏢</div>
+                    <h3 class="join-title">Business Owners</h3>
+                    <p class="join-description">Diversify your investments</p>
+                </div>
+
+                <div class="join-card" data-aos="flip-left" data-aos-delay="400">
+                    <div class="join-icon">🌱</div>
+                    <h3 class="join-title">Beginners</h3>
+                    <p class="join-description">Start your trading journey</p>
+                </div>
+            </div>
+
+            <div class="cta-box" data-aos="zoom-in" data-aos-delay="500">
+                <h3 class="cta-title">Trading • Investing • Money Management</h3>
+                <p class="cta-text">Transform your financial future with professional trading education</p>
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                        Lifetime Support
+                    </div>
+                    <div class="cta-feature">
+                        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                        Live Trading Sessions
+                    </div>
+                    <div class="cta-feature">
+                        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                        Expert Mentorship
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Student Reviews Section -->
+    <section class="reviews-section" id="reviews">
+        <div class="reviews-container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Our Students Say</h2>
+                <p class="section-description">
+                    Real results from real students who transformed their trading journey
+                </p>
+            </div>
+
+            <div class="reviews-scroll-wrapper">
+                <div class="reviews-track">
+                    <!-- 
+                    ==============================================
+                    EDIT REVIEWS BELOW - INSTRUCTIONS:
+                    ==============================================
+                    - Change initials in review-avatar (e.g., "RK" to "JS")
+                    - Change name in <h4> tag
+                    - Change role in review-role (e.g., "Full-time Trader")
+                    - Change review text in review-text
+                    - To add more reviews: Copy a review-card div and paste it
+                    - Duplicate ALL cards at the end for seamless scrolling
+                    ==============================================
+                    -->
+                    
+                    <!-- Review Card 1 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">RK</div>
+                            <div class="review-info">
+                                <h4>Aryan Kumar</h4>
+                                <p class="review-role">Full-time Trader</p>
+                            </div>
+                        </div>
+                        <div class="review-stars">
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        </div>
+                        <p class="review-text">
+                            "The course was very informative and helped me understand the basics of trading. I'm now able to make informed decisions in the market."
+                        </p>
+                    </div>
+
+                    <!-- Review Card 2 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">PS</div>
+                            <div class="review-info">
+                                <h4>Priya Sharma</h4>
+                                <p class="review-role">Part-time Trader</p>
+                            </div>
+                        </div>
+                        <div class="review-stars">
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        </div>
+                        <p class="review-text">
+                            "The risk management techniques taught here saved me from huge losses. Now I trade with discipline and proper planning. Highly recommend!"
+                        </p>
+                    </div>
+
+                    <!-- Review Card 3 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">AJ</div>
+                            <div class="review-info">
+                                <h4>Amit Jha</h4>
+                                <p class="review-role">Investor</p>
+                            </div>
+                        </div>
+                        <div class="review-stars">
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        </div>
+                        <p class="review-text">
+                            "From zero knowledge to profitable trader in 3 months! The live trading sessions and mentorship made all the difference. Worth every penny!"
+                        </p>
+                    </div>
+
+                    <!-- Review Card 4 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">SK</div>
+                            <div class="review-info">
+                                <h4>Sneha Kumari</h4>
+                                <p class="review-role">Day Trader</p>
+                            </div>
+                        </div>
+                        <div class="review-stars">
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        </div>
+                        <p class="review-text">
+                            "The trading psychology module changed my approach completely. I now handle losses better and stick to my strategy. Excellent academy!"
+                        </p>
+                    </div>
+
+                    <!-- DUPLICATE ALL CARDS BELOW FOR SEAMLESS SCROLLING -->
+                    <!-- Duplicate Review Card 1 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">RK</div>
+                            <div class="review-info">
+                                <h4>Rahul Kumar</h4>
+                                <p class="review-role">Full-time Trader</p>
+                            </div>
+                        </div>
+                        <div class="review-stars">
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        </div>
+                        <p class="review-text">
+                            "Best trading academy in Patna! The instructors are knowledgeable and the course content is excellent. I'm now trading confidently and making consistent profits."
+                        </p>
+                    </div>
+
+                    <!-- Duplicate Review Card 2 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">PS</div>
+                            <div class="review-info">
+                                <h4>Priya Sharma</h4>
+                                <p class="review-role">Part-time Trader</p>
+                            </div>
+                        </div>
+                        <div class="review-stars">
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        </div>
+                        <p class="review-text">
+                            "The risk management techniques taught here saved me from huge losses. Now I trade with discipline and proper planning. Highly recommend!"
+                        </p>
+                    </div>
+
+                    <!-- Duplicate Review Card 3 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">AJ</div>
+                            <div class="review-info">
+                                <h4>Amit Jha</h4>
+                                <p class="review-role">Investor</p>
+                            </div>
+                        </div>
+                        <div class="review-stars">
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        </div>
+                        <p class="review-text">
+                            "From zero knowledge to profitable trader in 3 months! The live trading sessions and mentorship made all the difference. Worth every penny!"
+                        </p>
+                    </div>
+
+                    <!-- Duplicate Review Card 4 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">SK</div>
+                            <div class="review-info">
+                                <h4>Sneha Kumari</h4>
+                                <p class="review-role">Day Trader</p>
+                            </div>
+                        </div>
+                        <div class="review-stars">
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        </div>
+                        <p class="review-text">
+                            "The trading psychology module changed my approach completely. I now handle losses better and stick to my strategy. Excellent academy!"
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <!-- Contact Section -->
+    <section id="contact" class="gallery-bg">
+        <div class="container">
+            <div class="contact-grid">
+                <div data-aos="fade-right">
+                    <div class="contact-info">
+                        <h2 class="contact-title">Ready to Start Your <span class="gradient-text">Trading Journey?</span></h2>
+                        <p class="contact-description">Join hundreds of successful traders who have transformed their lives through our comprehensive training programs.</p>
+                    </div>
+
+                    <a href="tel:7091674769" style="text-decoration: none;">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="contact-details-label">Call / WhatsApp</div>
+                                <div class="contact-details-value">7091674769</div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="contact-details-label">Location</div>
+                            <div class="contact-details-value">Khemnichak, MangalChak, Patna (Bihar)</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="contact-details-label">Website</div>
+                            <div class="contact-details-value">www.fortunemantraacademy.online</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form" data-aos="fade-left">
+                    <h3 class="form-title">Get Started Today</h3>
+                    <form id="enquiryForm">
+                        <div class="form-group">
+                            <input type="text" name="user_name" class="form-input" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="user_phone" class="form-input" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="user_email" class="form-input" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="course_interest" class="form-select" required>
+                                <option value="">Select Course Interest</option>
+                                <option value="stock">Stock Market</option>
+                                <option value="intraday">Intraday & Swing Trading</option>
+                                <option value="risk">Risk & Money Management</option>
+                                <option value="psychology">Trading Psychology</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="form-submit">Submit Enquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div data-aos="fade-up">
+                    <div class="footer-logo">
+                        <div class="footer-logo-circle">
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                            </svg>
+                        </div>
+                        <div class="footer-logo-text">
+                            <h3>FORTUNE MANTRA</h3>
+                            <p>Academy</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">Empowering traders with knowledge, discipline, and professional guidance to achieve financial freedom.</p>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                       
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <div class="footer-contact-item">
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        7091674769
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        Khemnichak, MangalChak, Patna (Bihar)
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        info@fortunemantraacademy.in
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Fortune Mantra Academy. All rights reserved. | <span class="footer-highlight">Learn Trading with Discipline, Not Gambling</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </div>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        // Handle logo image loading
+        window.addEventListener('load', function() {
+            const logoImages = document.querySelectorAll('.logo-image');
+            logoImages.forEach(img => {
+                img.addEventListener('error', function() {
+                    // Hide image and show SVG fallback if image fails to load
+                    this.style.display = 'none';
+                    const svg = this.nextElementSibling;
+                    if (svg && svg.classList.contains('logo-icon')) {
+                        svg.style.display = 'block';
+                    }
+                });
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            const scrollToTop = document.getElementById('scrollToTop');
+            
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+            // Show/hide scroll to top button
+            if (window.scrollY > 300) {
+                scrollToTop.classList.add('visible');
+            } else {
+                scrollToTop.classList.remove('visible');
+            }
+        });
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const btn = document.getElementById('mobileMenuBtn');
+            menu.classList.toggle('active');
+            btn.classList.toggle('active');
+        }
+
+        function closeMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const btn = document.getElementById('mobileMenuBtn');
+            menu.classList.remove('active');
+            btn.classList.remove('active');
+        }
+
+        // Market Ticker
+        const newsItems = [
+            "SENSEX UP 2.5% | Breaking: Tech stocks rally on positive earnings",
+            "NIFTY at all-time high | Banking sector shows strong growth",
+            "Gold prices surge 3% | Global markets respond to Fed decision",
+            "Rupee strengthens against dollar | FII inflows continue",
+            "New IPO alert: Strong subscription rates expected",
+            "Market experts predict bullish trend for Q1 2026"
+        ];
+
+        const tickerContent = document.getElementById('tickerContent');
+        const allNews = [...newsItems, ...newsItems];
+        
+        allNews.forEach(news => {
+            const item = document.createElement('div');
+            item.className = 'ticker-item';
+            item.innerHTML = `
+                <svg class="ticker-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+                <span class="ticker-text">${news}</span>
+            `;
+            tickerContent.appendChild(item);
+        });
+
+        // Form Submit Handler
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Thank you for your interest! We will contact you soon.');
+            event.target.reset();
+        }
+
+        // Scroll to Top Function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Smooth Scroll for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 80; // Account for fixed navbar
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                    closeMobileMenu(); // Close mobile menu after clicking
+                }
+            });
+        });
+
+        // Add parallax effect to hero blobs
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const blob1 = document.querySelector('.hero-blob-1');
+            const blob2 = document.querySelector('.hero-blob-2');
+            
+            if (blob1 && blob2) {
+                blob1.style.transform = `translateY(${scrolled * 0.5}px)`;
+                blob2.style.transform = `translateY(${scrolled * 0.3}px)`;
+            }
+        });
+
+        // Add counter animation for stats
+        function animateCounter(element, target, duration = 2000) {
+            let start = 0;
+            const increment = target / (duration / 16);
+            const timer = setInterval(() => {
+                start += increment;
+                if (start >= target) {
+                    element.textContent = target + (element.textContent.includes('+') ? '+' : '%');
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(start) + (element.textContent.includes('+') ? '+' : target > 100 ? '' : '%');
+                }
+            }, 16);
+        }
+
+        // Trigger counter animation when stats are in view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.dataset.animated) {
+                    entry.target.dataset.animated = 'true';
+                    const text = entry.target.textContent;
+                    const number = parseInt(text.replace(/\D/g, ''));
+                    animateCounter(entry.target, number);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.stat-number, .stats-number').forEach(stat => {
+            observer.observe(stat);
+        });
+
+        console.log('%c🚀 Fortune Mantra Academy Website Loaded Successfully!', 'color: #f59e0b; font-size: 20px; font-weight: bold;');
+        console.log('%c📞 Contact: 7091674769', 'color: #fbbf24; font-size: 16px;');
+        console.log('%c📍 Location: Patna, Bihar', 'color: #fbbf24; font-size: 16px;');
+    </script>
+
+<!-- ================= EMAILJS (FIXED & SAFE) ================= -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* 🔴 STEP 1: PUT YOUR EMAILJS PUBLIC KEY HERE */
+  emailjs.init("zQNwGQaOV99yFsROO");
+
+  const form = document.getElementById("enquiryForm");
+  if (!form) {
+    console.error("❌ enquiryForm not found");
+    return;
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_hdiylwo",   // 🔴 STEP 2
+      "template_hynl05n",  // 🔴 STEP 3
+      this
+    ).then(
+      function () {
+        alert("✅ Enquiry sent successfully!");
+        form.reset();
+      },
+      function (error) {
+        alert("❌ Failed to send enquiry");
+        console.error("EmailJS Error:", error);
+      }
+    );
+  });
+
+});
+</script>
+
+</body>
+</html>
+
+
+
+</html>
