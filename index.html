@@ -38,6 +38,18 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <style>
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
         * {
             margin: 0;
             padding: 0;
@@ -387,7 +399,7 @@
         }
 
         .hero h2 {
-            font-size: 3.5rem;
+            font-size: clamp(2rem, 5vw, 3.5rem);
             font-weight: 900;
             line-height: 1.2;
             margin-bottom: 1rem;
@@ -408,7 +420,7 @@
         }
 
         .hero h3 {
-            font-size: 3rem;
+            font-size: clamp(1.8rem, 4.5vw, 3rem);
             font-weight: 900;
             margin-bottom: 2rem;
         }
@@ -550,8 +562,8 @@
         }
 
         .main-logo {
-            width: 350px;
-            height: 350px;
+            width: clamp(200px, 40vw, 350px);
+            height: clamp(200px, 40vw, 350px);
             object-fit: contain;
             animation: logoFloat 3s ease-in-out infinite;
             filter: drop-shadow(0 10px 30px rgba(245, 158, 11, 0.3));
@@ -639,7 +651,7 @@
 
         /* Section Styles */
         section {
-            padding: 80px 1.5rem;
+            padding: clamp(60px, 8vw, 100px) 1.5rem;
         }
 
         .section-header {
@@ -648,7 +660,7 @@
         }
 
         .section-title {
-            font-size: 3rem;
+            font-size: clamp(1.8rem, 4.5vw, 3rem);
             font-weight: 700;
             margin-bottom: 1rem;
         }
@@ -899,7 +911,7 @@
             display: flex;
             gap: 2rem;
             animation: scrollReviews 40s linear infinite;
-            width: fit-content;
+            width: max-content;
         }
 
         .reviews-track:hover {
@@ -916,8 +928,8 @@
         }
 
         .review-card {
-            min-width: 400px;
-            max-width: 400px;
+            width: min(85vw, 400px); min-width: 280px;
+            
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(245, 158, 11, 0.2);
@@ -997,7 +1009,7 @@
         }
 
         .contact-title {
-            font-size: 3rem;
+            font-size: clamp(1.8rem, 4.5vw, 3rem);
             font-weight: 700;
             color: white;
             margin-bottom: 1.5rem;
@@ -1352,8 +1364,8 @@
         <div class="nav-container">
             <div class="logo-section" onclick="window.location.href='#home'">
                 <div class="logo-circle">
-                    <!-- Replace 'logofortune.png' with your actual logo file path -->
-                    <img src="logofortune.png" alt="Fortune Mantra Logo" class="logo-image">
+                    
+                    <img src="logoo.png" alt="Fortune Mantra Logo" class="logo-image">
                     <!-- Fallback SVG if image not found -->
                     <svg class="logo-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="display: none;">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
@@ -1707,18 +1719,7 @@ Yeh course beginners ke liye perfect hai 👇</p>
 
             <div class="reviews-scroll-wrapper">
                 <div class="reviews-track">
-                    <!-- 
-                    ==============================================
-                    EDIT REVIEWS BELOW - INSTRUCTIONS:
-                    ==============================================
-                    - Change initials in review-avatar (e.g., "RK" to "JS")
-                    - Change name in <h4> tag
-                    - Change role in review-role (e.g., "Full-time Trader")
-                    - Change review text in review-text
-                    - To add more reviews: Copy a review-card div and paste it
-                    - Duplicate ALL cards at the end for seamless scrolling
-                    ==============================================
-                    -->
+                   
                     
                     <!-- Review Card 1 -->
                     <div class="review-card">
