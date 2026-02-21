@@ -1,0 +1,3 @@
+User-agent: * Allow: /
+
+Sitemap: https://www.fortunemantraacademy.in/sitemap.xml
